@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    text-decoration: none; border: none; outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%; height: 100vh; overflow-x: hidden;
+    background-color: black; color: white;
+}
+
+/* Header */
+header {
+    margin-top: 20px; width: 100%; padding: 1rem 9%;
+    background-color: transparent; filter: drop-shadow(10px);
+    display: flex; justify-content: space-between;
+    align-items: center; z-index: 100;
+}
+
+header .logo {
+    font-size: 3rem; color: white; font-weight: 800;
+    cursor: pointer; transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Section */
+section {
+    padding: 5rem 9% 8rem;
+}
+
+.home {
+    display: flex; justify-content: center; align-items: center;
+    gap: 8rem; background-color: black;
+}
+
+.home-img {
+    border-radius: 50%;
+}
+
+.home-img img {
+    position: relative; width: 32vw; border-radius: 50%;
+    box-shadow: 0 0 25px solid red; cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover {
+    font-size: 1.8rem; font-weight: 500;
+}
+
+/* Home Content */
+.home .home-content h1 {
+    font-size: 6rem; font-weight: 700; line-height: 1.3;
+}
+
+span {
+    color: red;
+}
+
+.home-content h3 {
+    font-size: 4rem; margin-bottom: 1rem; font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.6rem; text-align: justify;
+}
+
+.typing-text {
+    font-size: 34px; font-weight: 600; min-width: 280px;
+    text-align: left;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span::after {
+    content: ""; background-color: black;
+    position: absolute; width: calc(0% + 1px);
+    height: 100%; border-left: 3px solid black;
+    right: -8; animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid red;
+    }
+}
+
+/* Social Icon */
+.social-icons a {
+    display: inline-flex; justify-content: center;
+    align-items: center; width: 4rem; height: 4rem;
+    background-color: transparent; border: 0.2rem solid red;
+    font-size: 2rem; border-radius: 50%; margin: 10px;
+    transition: 0.3s ease; color: white;
+}
+
+.social-icons a:hover {
+    transform: scale(1.3) translateY(-5px);
+    background-color: red; box-shadow: 0  0 25px red;
+}
+
+/* Btn */
+.btn {
+    display: inline-block; padding: 1rem 2.8rem; background-color: black;
+    border-radius: 2rem; font-size: 1.6rem;
+    color: white; letter-spacing: 0.3rem; font-weight: 600;
+    border: 2px solid red; transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale3d(1.03); background-color: red;
+    color: white; box-shadow: 0 0 25px red;
+}
+
+/* Tentang Saya */
+.tentang-saya {
+    width: 80%; margin: auto;
+    margin-bottom: 100px;
+}
+
+.tentang-saya h1 {
+    font-size: 6rem; text-align: center;
+}
+
+.tentang-saya h3 {
+    font-size: 34px; color: red;
+    margin-bottom: 10px; text-align: center;
+}
+
+.tentang-saya p {
+    font-size: 1.6rem; text-align: justify;
+    font-weight: 300;
+}
+
+/* Layanan */
+.layanan {
+    width: 80%; margin: auto;
+}
+
+.layanan h1 {
+    font-size: 6rem; text-align: center;
+}
+
+.layanan .container1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.layanan .container1 .box {
+    width: 32%; border: 1px solid red; text-align: center;
+    padding: 20px; border-radius: 20px; margin-bottom: 30px;
+}
+
+.layanan .container1 .box h1 {
+    font-size: 2rem; color: white;
+    margin-bottom: 20px;
+}
+
+.layanan .container1 .box p {
+    font-size: 1.6rem; text-align: justify;
+    font-weight: 300;
+}
+
+.layanan .container1 .box .garis {
+    border: 1px solid red; margin-bottom: 20px;
+}
+
+/* Skill */
+.skill h1 {
+    text-align: center; font-size: 6rem;
+}
+
+.skill h2 {
+    font-size: 4rem; text-align: center;
+}
+
+.skill-bar p {
+    font-size: 2rem;
+}
+
+.skill-bar .skill-box {
+    background: white; color: white; font-size: 1.3rem;
+    font-weight: bold; text-align: right; border-radius: 5px;
+}
+
+/* FrontEnd */
+.html {
+    width: 95%; background: red; border-radius: 5px;
+}
+
+.css {
+    width: 80%; background: red; border-radius: 5px;
+}
+
+.java {
+    width: 20%; background: red; border-radius: 5px;
+}
+.js {
+    width: 5%; background: red; border-radius: 5px;
+}
+
+/* BackEnd */
+.php {
+    width: 20%; background: red; border-radius: 5px;
+}
+
+.python {
+    width: 10%; background: red; border-radius: 5px;
+}
+
+.sql {
+    width: 50%; background: red; border-radius: 5px;
+}
+.firebase {
+    width: 0%; background: red; border-radius: 5px;
+}
+
+/* UI /UX Design */
+.figma {
+    width: 20%; background: red; border-radius: 5px;
+}
+
+.sketch {
+    width: 0%; background: red; border-radius: 5px;
+}
+
+.ps {
+    width: 50%; background: red; border-radius: 5px;
+}
+.lr {
+    width: 90%; background: red; border-radius: 5px;
+}
+
+/* Kontak */
+.kontak h1 {
+    text-align: center; font-size: 6rem;
+}
+
+.jenis {
+    display: flex; justify-content: space-around;
+}
+
+.jenis h2 {
+    font-size: 2rem; text-align: center; color: red;
+}
+
+.kontak .jenis .tlp, .email, .alamat {
+    width: 33%;
+}
+
+.kontak .jenis p {
+    font-size: 1.3rem; text-align: center;
+}
+
+/* G-Maps */
+.maps {
+    width: 80%; margin: auto; margin-top: -50px;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+/* Sosmed */
+.sosmed {
+    text-align: center; width: 80%; margin: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center; font-size: 1.5rem;
+}
+
+@media(max-width: 1024px) {
+    header .logo {
+        font-size: 2.5rem;
+    }
+    /* Section */
+    .home {
+        flex-direction: column; margin: 5rem 4rem;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 70vw; margin-top: 4rem;
+    }
+
+    /* Home Content */
+    .home .home-content h1 {
+        font-size: 4rem; text-align: center;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.5rem; text-align: center;
+    }
+
+    /* Social Icon */
+    .social-icons {
+        text-align: center;
+    }
+
+    /* Tentang Saya */
+    .tentang-saya h1 {
+        font-size: 4rem;
+    }
+
+    .tentang-saya h3 {
+        font-size: 2.5rem;
+    }
+
+    .tentang-saya p {
+        font-size: 1.5rem;
+    }
+    
+    /* Layanan */
+    .layanan h1 {
+        font-size: 4rem;
+    }
+
+    .layanan .container1 {
+        display: block;
+    }
+
+    .layanan .container1 .box {
+        width: 100%;
+    }
+
+    /* Skill */
+    .skill h1 {
+        font-size: 4rem;
+    }
+
+    .skill h2 {
+        font-size: 2.5rem;
+    }
+
+    .skill-bar p {
+        font-size: 1.5rem;
+    }
+
+    /* Kontak */
+    .kontak h1 {
+        font-size: 4rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .kontak h1 {
+        font-size: 3rem;
+    }
+
+    .kontak .jenis h2 {
+        font-size: 1.5rem;
+    }
+
+    .kontak .jenis p {
+        font-size: 1.2rem;
+    }
+
+    .jenis {
+        display: block;
+    }
+
+    .kontak .jenis .tlp, .email, .alamat {
+        width: 100%; margin-bottom: 20px;
+    }
+
+    .maps {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 425px) {
+    /* Header */
+    header .logo {
+        font-size: 1.8rem;
+    }
+
+    /* Section */
+    section {
+        padding: 0.1rem 9% 8rem;
+    }
+
+    .home .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .home .home-content p {
+        font-size: 1.3rem;
+    }
+
+    /* Tentang Saya */
+    .tentang-saya h1 {
+        font-size: 2.5rem;
+    }
+
+    .tentang-saya h3 {
+        font-size: 2rem;
+    }
+
+    .tentang-saya p {
+        font-size: 1.3rem;
+    }
+
+    /* Layanan */
+    .layanan h1 {
+        font-size: 2.5rem;
+    }
+
+    .layanan .container1 .box p {
+        font-size: 1.3rem;
+    }
+
+    .skill h1 {
+        font-size: 2.5rem;
+    }
+
+    .skill h2 {
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1rem;
+    }
+}
